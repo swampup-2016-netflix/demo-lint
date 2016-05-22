@@ -1,0 +1,11 @@
+{
+  "replace": [
+    {
+      "module": "com.google.collections:google-collections",
+      "with": "com.google.guava:guava",
+      "reason": "Google collections has been renamed to Guava",
+      "author": "nadavc",
+      "date": "2015-10-07T20:21:20.368Z"
+    }
+  ]
+}
