@@ -2,15 +2,7 @@ buildscript { repositories { jcenter() } }
 
 plugins {
    id 'java'
-   id 'nebula.resolution-rules' version '1.6.2'
-   id 'nebula.lint' version '0.29.0'
 }
-
-gradleLint.rules = [
-   'unused-dependency',
-   'overridden-dependency-version',
-   'duplicate-dependency-class'
-]
 
 repositories { jcenter() }
 
@@ -18,9 +10,4 @@ dependencies {
    compile 'com.amazonaws:aws-java-sdk:1.11.3'
    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.5' // should have version replaced
    compile 'junit:junit:4.+'
-
-   resolutionRules files('src/main/resources/duplicate-rules.json')
-
-   compile 'com.google.collections:google-collections:1.0'
-   compile 'com.google.guava:guava:19.0'
 }
